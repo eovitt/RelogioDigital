@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Roxo e azul */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    color: #fff;
+  }
+  
+  .container {
+    text-align: center;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  #data {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #dcdcdc;
+  }
+  
+  #relogio {
+    font-size: clamp(2.5rem, 10vw, 5rem);
+    font-weight: bold;
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #6a11cb;
+    animation: brilho 1.5s infinite alternate;
+  }
+  
+  .autor {
+    margin-top: 30px;
+    font-size: 0.9rem;
+    color: #cccccc;
+  }
+  
+  @keyframes brilho {
+    from {
+      text-shadow: 0 0 10px #ffffff;
+    }
+    to {
+      text-shadow: 0 0 30px #ffffff;
+    }
+  }
+  
